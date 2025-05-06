@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreferenceCompat
+        android:key="notificaciones"
+        android:title="Mandar notificaciones"
+        android:summary="Notificar si estamos cerca de un lugar"/>
+
+    <EditTextPreference
+        android:key="maximo"
+        android:title="Máximo de lugares a mostrar"
+        android:summary="Limita en numero de valores que se muestran"
+        android:inputType="number"
+        android:defaultValue="12"/>
+
+    <ListPreference
+        android:key="orden"
+        android:title="Criterio de ordenación"
+        android:summary="Qué lugares quieres que aparezcan antes"
+        android:entries="@array/tiposOrden"
+        android:entryValues="@array/tiposOrdenValores"
+        android:defaultValue="0"/>
+
+    <PreferenceCategory
+        android:title="Modo multijugador">
+
+        <CheckBoxPreference
+            android:key="activar_multijugador"
+            android:title="Activar multijugador"
+            android:summary="Activar o desactivar el modo multijugador" />
+
+        <EditTextPreference
+            android:key="maximo_jugadores"
+            android:title="Máximo de jugadores"
+            android:summary="Establecer el número máximo de jugadores"
+            android:inputType="number"
+            android:defaultValue="4" />
+
+        <ListPreference
+            android:key="tipo_conexion"
+            android:title="Tipo de conexión"
+            android:summary="Seleccionar el tipo de conexión"
+            android:entries="@array/tiposConexion"
+            android:entryValues="@array/tiposConexionValores"
+            android:defaultValue="bluetooth" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Controles">
+        <SwitchPreference
+            android:key="teclado"
+            android:title="Teclado"
+            android:summary="Activar/desactivar el control por teclado" />
+        <SwitchPreference
+            android:key="pantalla_tactil"
+            android:title="Pantalla táctil"
+            android:summary="Activar/desactivar el control por pantalla táctil" />
+        <SwitchPreference
+            android:key="sensores"
+            android:title="Sensores"
+            android:summary="Activar/desactivar el control por sensores" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Audio">
+
+        <SwitchPreferenceCompat
+            android:key="musica_fondo"
+            android:title="Reproducción de música de fondo"
+            android:summary="Controla la reproducción de música de fondo"
+            android:defaultValue="true"/>
+
+        <SwitchPreferenceCompat
+            android:key="efectos_sonido"
+            android:title="Efectos de sonido"
+            android:summary="Controla la reproducción de efectos de sonido"
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Juego">
+
+        <ListPreference
+            android:key="num_fragmentos"
+            android:title="Número de fragmentos"
+            android:summary="Define el número de fragmentos generados al destruir un asteroide"
+            android:entries="@array/num_fragmentos_entries"
+            android:entryValues="@array/num_fragmentos_values"
+            android:defaultValue="3" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Almacenamiento">
+    <ListPreference
+        android:key="metodo_almacenamiento"
+        android:title="Método de Almacenamiento"
+        android:summary="Selecciona el método de almacenamiento de puntuaciones"
+        android:entries="@array/metodos_almacenamiento_entries"
+        android:entryValues="@array/metodos_almacenamiento_values"
+        android:defaultValue="fichero_interno"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Almacenamiento Externo">
+
+        <ListPreference
+            android:key="metodo_almacenamiento_fichero"
+            android:title="Método de Almacenamiento Externo"
+            android:summary="Selecciona el método de almacenamiento en el almacenamiento externo"
+            android:entries="@array/metodos_almacenamiento_fichero_entries"
+            android:entryValues="@array/metodos_almacenamiento_fichero_values"
+            android:defaultValue="fichero"
+            android:dependency="metodo_almacenamiento"/>
+    </PreferenceCategory>
+
+
+</androidx.preference.PreferenceScreen>

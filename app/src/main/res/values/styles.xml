@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MiEstilo">
+        <item name="android:textSize">15sp</item>
+        <item name="android:backgroundTint">#141452</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    </resources>

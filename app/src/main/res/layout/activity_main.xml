@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:background="@drawable/degradado">
+
+    <TextView
+        android:id="@+id/tituloTextView"
+        android:layout_width="351dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:text="@string/tituloAplicacion"
+        android:textSize="25sp"
+        android:textColor="@color/green"
+        app:layout_constraintBottom_toTopOf="@+id/Button01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <Button
+        android:id="@+id/Button04"
+        style="@style/MiEstilo"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="292dp"
+        android:text="@string/Salir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Button02"
+        style="@style/MiEstilo.Boton"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="@string/Configurar"
+        app:layout_constraintBottom_toTopOf="@+id/Button03"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="lanzarPreferencias" />
+
+
+    <Button
+        android:id="@+id/Button03"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:onClick="lanzarAcercaDe"
+        android:text="@string/Acercade"
+        app:layout_constraintBottom_toTopOf="@+id/Button04"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="@string/Arrancar"
+        app:layout_constraintBottom_toTopOf="@+id/Button02"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="mostrarPreferencias"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tiposOrden">
+        <item>Creación</item>
+        <item>Valoración</item>
+        <item>Distancia</item>
+    </string-array>
+    <string-array name="tiposOrdenValores">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="tiposConexion">
+        <item>Bluetooth</item>
+        <item>Wi-Fi</item>
+        <item>Internet</item>
+    </string-array>
+    <string-array name="tiposConexionValores">
+        <item>bluetooth</item>
+        <item>wifi</item>
+        <item>internet</item>
+    </string-array>
+    <string-array name="num_fragmentos_entries">
+        <item>No hacer fragmentos</item>
+        <item>1 fragmento</item>
+        <item>2 fragmentos</item>
+        <item>3 fragmentos</item>
+    </string-array>
+    <string-array name="num_fragmentos_values">
+        <item>"0"</item>
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+    </string-array>
+
+    <string-array name="metodos_almacenamiento_entries">
+        <item>Array</item>
+        <item>Preferencias</item>
+        <item>Fichero en memoria interna</item>
+        <item>Fichero en memoria externa</item>
+        <item>Raw</item>
+        <item>Assets</item>
+        <item>SAX</item>
+        <item>GSon</item>
+        <item>JSon</item>
+        <item>SQLite</item>
+        <item>SQLiteRel</item>
+        <item>Sockets</item>
+        <item>SWPHP</item>
+        <item>SWPHPASYNC</item>
+    </string-array>
+    <string-array name="metodos_almacenamiento_values">
+        <item>array</item>
+        <item>preferencias</item>
+        <item>fichero_interno</item>
+        <item>fichero_externo</item>
+        <item>raw</item>
+        <item>assets</item>
+        <item>sax</item>
+        <item>gson</item>
+        <item>json</item>
+        <item>sqlite</item>
+        <item>sqliterel</item>
+        <item>sockets</item>
+        <item>swphp</item>
+        <item>swphpasync</item>
+    </string-array>
+
+    <string-array name="metodos_almacenamiento_fichero_entries">
+        <item>Fichero</item>
+        <item>Carpeta</item>
+    </string-array>
+    <string-array name="metodos_almacenamiento_fichero_values">
+        <item>fichero</item>
+        <item>carpeta</item>
+    </string-array>
+</resources>
